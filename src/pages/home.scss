@@ -1,0 +1,22 @@
+main[y-page="home"] {
+	position: relative;
+
+	yodasws-mast {
+		display: block;
+		height: 300px;
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 0;
+		// TODO: Edit phot to multiple different aspect ratios and use @media rules
+		background-image: url('img/clt-skyline-evening.jpg');
+		background-size: 300px;
+		background-position: center center;
+		background-repeat: no-repeat;
+
+		@media (min-width: 640px) and (max-width: 1040px) {
+			background-image: url('img/clt-skyline-evening.jpg');
+			background-size: auto 130%;
+		}
+	}
+}
